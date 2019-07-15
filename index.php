@@ -9,7 +9,7 @@
  $channel_secret = 'ce55d9e0a8f2f735eb9f207c86f3b95e';
  
  // Get message from Line API 
- $content = file_get_contents('https://select2web-tnmcbot.herokuapp.com/');
+ $content = file_get_contents('php://input');
  $events = json_decode($content, true);
  
  if (!is_null($events['events'])) { 
