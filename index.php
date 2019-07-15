@@ -11,6 +11,7 @@
  // Get message from Line API 
  $content = file_get_contents('php://input');
  $events = json_decode($content, true);
+ 
  if (!is_null($events['events'])) { 
  // Loop through each event 
  foreach ($events['events'] as $event) { 
